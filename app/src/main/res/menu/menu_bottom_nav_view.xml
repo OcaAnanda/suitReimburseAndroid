@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <item
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:title="Add Reimburse"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_add"
+        />
+    <item
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="" />
+
+</menu>

@@ -12,10 +12,11 @@
         android:layout_marginBottom="10dp">
         <TextView
             android:text="Jenis"
+            android:id="@+id/tv_jenis"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:textColor="@color/white"
+            android:textColor="@color/textPrimary"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp" />
         <LinearLayout
@@ -27,7 +28,8 @@
                 android:id="@+id/logo_jenis_reimburse"
                 android:layout_weight="0.3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_directions_car" />
             <LinearLayout
                 android:layout_weight="0.5"
                 android:layout_width="wrap_content"
@@ -35,10 +37,11 @@
                 android:orientation="vertical">
                 <TextView
                     android:layout_marginLeft="10dp"
-                    android:id="@+id/keterangan_reimburse"
+                    android:id="@+id/tv_keterangan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="keterangan"/>
+                    android:text="keterangan"
+                    android:textColor="@color/textPrimary"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -48,13 +51,16 @@
                         android:layout_marginLeft="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Biaya"/>
+                        android:text="Biaya"
+                        android:textColor="@color/textPrimary"/>
                     <TextView
+                        android:id="@+id/tv_harga"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Rp"
                         android:layout_marginLeft="10dp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold"
+                        android:textColor="@color/textPrimary"/>
 
                 </LinearLayout>
 
@@ -66,15 +72,19 @@
                 android:layout_weight="0.2"
                 android:orientation="vertical">
                 <TextView
+                    android:id="@+id/tv_tanggal2"
                     android:layout_marginLeft="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tanggal"/>
+                    android:text="Tanggal"
+                    android:textColor="@color/textPrimary"/>
                 <TextView
+                    android:id="@+id/tv_struk"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="jumlah Struk"/>
+                    android:text="jumlah Struk"
+                    android:textColor="@color/textPrimary"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

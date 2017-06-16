@@ -1,5 +1,6 @@
 package com.example.ocaaa.reimburseproject;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.internal.BottomNavigationItemView;
 import android.support.design.widget.BottomNavigationView;
@@ -8,8 +9,10 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.Window;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -18,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView rvView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
-    private ArrayList<String> dataSet = new ArrayList<>();
+    private ArrayList<ReimburseMain> dataSet = new ArrayList<>();
     private BottomNavigationView bottomNavigationView;
 
     public MainActivity() {
@@ -37,24 +40,23 @@ public class MainActivity extends AppCompatActivity {
         rvView = (RecyclerView) findViewById(R.id.rv_main);
         rvView.setHasFixedSize(true);
 
-        bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
-
         layoutManager = new LinearLayoutManager(this);
         rvView.setLayoutManager(layoutManager);
 
-        adapter = new RVAdapter(MainActivity.this,dataSet);
+        adapter = new RVAdapter(MainActivity.this, dataSet);
         rvView.setAdapter(adapter);
 
-        initDataset();
+        bottomNavigationView = (BottomNavigationView) findViewById(R.id.btm_nav);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Intent intent = new Intent(MainActivity.this, AddReimburse.class);
+                startActivity(intent);
+                return true;
+            }
+        });
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(
-                new BottomNavigationView.OnNavigationItemSelectedListener() {
-                    @Override
-                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                        item.getItemId(R.id.add_reimburse);
-                    }
-    }
-
-    private void initDataset(){
+//        initDataset();
+//
+//    private void initDataset();
     }
 }

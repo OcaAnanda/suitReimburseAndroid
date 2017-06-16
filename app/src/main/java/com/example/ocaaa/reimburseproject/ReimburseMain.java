@@ -11,6 +11,15 @@ public class ReimburseMain {
     String kategori;
     Date tanggal;
     int harga;
+    String status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public String getTitle() {
         return title;

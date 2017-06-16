@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <include
         android:id="@+id/toolbar"
         layout="@layout/mytitle_2"
@@ -32,7 +34,7 @@
             android:layout_width="64dp"
             android:layout_height="wrap_content"
             android:text="edit"
-            android:background="transparent"
+            android:background="@null"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -64,24 +66,21 @@
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/reimburse_detail_list"
+        android:id="@+id/reimburse_detail_rv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </android.support.v7.widget.RecyclerView>
 
-    <android.support.design.widget.FloatingActionButton
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/fab"
-        android:layout_gravity="bottom|end"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="-20dp"
-        app:fabSize="normal"
-        app:elevation="4dp"
-        app:borderWidth="0dp"
-        android:src="@drawable/ic_add_black_24dp"
-        />
+<android.support.design.widget.BottomNavigationView
+    android:id="@+id/btm_nav_detail_reimburse"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    app:itemBackground="@color/colorPrimaryDark"
+    app:itemIconTint="@drawable/state_list"
+    app:itemTextColor="@drawable/state_list"
+    app:menu="@menu/menu_add_reimburse">
 
+</android.support.design.widget.BottomNavigationView>
 
 </LinearLayout>
