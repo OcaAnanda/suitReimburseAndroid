@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDivider">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/mytitle_2"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_weight="0.06"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_directions_car" />
+
+        <TextView
+            android:layout_weight="0.94"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="0.8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biaya"
+            android:textColor="@color/textPrimary"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"/>
+
+        <!--<TextView-->
+            <!--android:layout_weight="0.2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Mata Uang"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textColor="@color/textPrimary"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_weight="0.39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Rp"
+            android:textColor="@color/textPrimary"
+            android:textColorHint="@color/textPrimary"
+            android:layout_marginLeft="10dp"/>
+        <!--<EditText-->
+            <!--android:layout_weight="0.2"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/textPrimary"-->
+            <!--android:layout_marginRight="10dp"/>-->
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal"
+        android:textColor="@color/textPrimary"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi"
+        android:textColor="@color/textPrimary"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Struk"
+        android:textColor="@color/textPrimary"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="0.06"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_photo_camera"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:text="Pilih File"
+            android:textColor="@color/textPrimary"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/textPrimary"/>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+    <item
+        android:id="@+id/action_transport"
+        android:enabled="true"
+        android:icon="@drawable/ic_directions_car"
+        android:title="Transportasi"/>
+        <!--app:showAsAction="ifRoom"-->
+    <item
+        android:id="@+id/action_konsum"
+        android:enabled="true"
+        android:icon="@drawable/ic_free_breakfast"
+        android:title="Konsumsi"/>
+        <!--app:showAsAction="ifRoom"-->
+    <item
+        android:id="@+id/action_akomodasi"
+        android:enabled="true"
+        android:icon="@drawable/ic_hotel"
+        android:title="Akomodasi"/>
+        <!--app:showAsAction="ifRoom"-->
+</menu>
